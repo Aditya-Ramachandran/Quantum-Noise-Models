@@ -1,2 +1,3 @@
 # Quantum-Noise-Models
-Building a noise model for simulating a Qiskit quantum circuit in the presence of errors.
+
+Building a noise model for simulating a Qiskit quantum circuit in the presence of errors. We know that the simulator always imitates an ideal Quantum Computer so when we run a circuit on it, it won't show any noise (Quantum Noise) and always gives us the exact expected result with any moise. But the quantum computers we have today are way too noisy and are not at all ideal. So I made this so when you run your circuit on a simulator, an approximate *NoiseModel* can be generated automatically from the properties of real device backends from the IBMQ provider using the *from_backend()* method.
